@@ -10,6 +10,14 @@ public class Triangle {
         triangle.drawHorizontalLine(8);
         System.out.println("Drawing 3 asterisks vertically");
         triangle.drawVerticalLine(3);
+        System.out.println("Drawing triangle with sides of 3 asterisks");
+        triangle.drawTriangle(3);
+    }
+
+    private void drawTriangle(int sideLength) {
+        for (int i = 1; i <= sideLength; i++) {
+            drawHorizontalLine(i);
+        }
     }
 
     private void drawVerticalLine(int lineHeight) {
