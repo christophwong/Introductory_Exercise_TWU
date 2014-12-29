@@ -42,7 +42,7 @@ abstract class Triangle {
         }
     }
 
-    private static void drawHorizontalLine(int lineLength, String output) {
+    public static void drawHorizontalLine(int lineLength, String output) {
         for(int i = 0; i < lineLength; i++) {
             System.out.print(output);
         }
